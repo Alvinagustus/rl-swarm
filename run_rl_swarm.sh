@@ -253,22 +253,25 @@ if [ "$CONNECT_TO_TESTNET" = true ]; then
 #    Contoh:
 PORT=3000
 #
-# 3. Variabel Arsitektur dan Sistem Operasi (untuk instalasi Cloudflared & ngrok):
-#    Anda mungkin perlu mendeteksi ini secara otomatis, contoh:
-#    OS=$(uname -s | tr '[:upper:]' '[:lower:]') # e.g., linux, darwin
-#    ARCH=$(uname -m)
-#
-#    Untuk Cloudflared (CF_ARCH):
-if [[ "$ARCH" == "x86_64" ]]; then CF_ARCH="amd64";
-elif [[ "$ARCH" == "aarch64" ]]; then CF_ARCH="arm64";
-else CF_ARCH="$ARCH"; fi # Sesuaikan jika perlu
-#
-#    Untuk ngrok (NGROK_ARCH):
-if [[ "$ARCH" == "x86_64" ]]; then NGROK_ARCH="amd64";
-elif [[ "$ARCH" == "aarch64" ]]; then NGROK_ARCH="arm64";
-elif [[ "$ARCH" == "i386" ]] || [[ "$ARCH" == "i686" ]]; then NGROK_ARCH="386";
-elif [[ "$ARCH" == "armv7l" ]]; then NGROK_ARCH="arm";
-else NGROK_ARCH="$ARCH"; fi # Sesuaikan jika perlu
+echo -e "\n${CYAN}${BOLD}[✓] Detecting system architecture...${NC}"
+    ARCH=$(uname -m)
+    OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+    if [ "$ARCH" = "x86_64" ]; then
+        NGROK_ARCH="amd64"
+        CF_ARCH="amd64"
+        echo -e "${GREEN}${BOLD}[✓] Detected x86_64 architecture.${NC}"
+    elif [ "$ARCH" = "arm64" ] || [ "$ARCH" = "aarch64" ]; then
+        NGROK_ARCH="arm64"
+        CF_ARCH="arm64"
+        echo -e "${GREEN}${BOLD}[✓] Detected ARM64 architecture.${NC}"
+    elif [[ "$ARCH" == arm* ]]; then
+        NGROK_ARCH="arm"
+        CF_ARCH="arm"
+        echo -e "${GREEN}${BOLD}[✓] Detected ARM architecture.${NC}"
+    else
+        echo -e "${RED}[✗] Unsupported architecture: $ARCH. Please use a supported system.${NC}"
+        exit 1
+    fi
 #
 # Global variables for tunnel info
 TUNNEL_PID=""
