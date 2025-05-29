@@ -251,7 +251,7 @@ if [ "$CONNECT_TO_TESTNET" = true ]; then
 
 # 2. Variabel PORT (port aplikasi lokal Anda):
 #    Contoh:
-#    PORT=3000
+PORT=3000
 #
 # 3. Variabel Arsitektur dan Sistem Operasi (untuk instalasi Cloudflared & ngrok):
 #    Anda mungkin perlu mendeteksi ini secara otomatis, contoh:
@@ -259,16 +259,16 @@ if [ "$CONNECT_TO_TESTNET" = true ]; then
 #    ARCH=$(uname -m)
 #
 #    Untuk Cloudflared (CF_ARCH):
-#    if [[ "$ARCH" == "x86_64" ]]; then CF_ARCH="amd64";
-#    elif [[ "$ARCH" == "aarch64" ]]; then CF_ARCH="arm64";
-#    else CF_ARCH="$ARCH"; fi # Sesuaikan jika perlu
+if [[ "$ARCH" == "x86_64" ]]; then CF_ARCH="amd64";
+elif [[ "$ARCH" == "aarch64" ]]; then CF_ARCH="arm64";
+else CF_ARCH="$ARCH"; fi # Sesuaikan jika perlu
 #
 #    Untuk ngrok (NGROK_ARCH):
-#    if [[ "$ARCH" == "x86_64" ]]; then NGROK_ARCH="amd64";
-#    elif [[ "$ARCH" == "aarch64" ]]; then NGROK_ARCH="arm64";
-#    elif [[ "$ARCH" == "i386" ]] || [[ "$ARCH" == "i686" ]]; then NGROK_ARCH="386";
-#    elif [[ "$ARCH" == "armv7l" ]]; then NGROK_ARCH="arm";
-#    else NGROK_ARCH="$ARCH"; fi # Sesuaikan jika perlu
+if [[ "$ARCH" == "x86_64" ]]; then NGROK_ARCH="amd64";
+elif [[ "$ARCH" == "aarch64" ]]; then NGROK_ARCH="arm64";
+elif [[ "$ARCH" == "i386" ]] || [[ "$ARCH" == "i686" ]]; then NGROK_ARCH="386";
+elif [[ "$ARCH" == "armv7l" ]]; then NGROK_ARCH="arm";
+else NGROK_ARCH="$ARCH"; fi # Sesuaikan jika perlu
 #
 # Global variables for tunnel info
 TUNNEL_PID=""
