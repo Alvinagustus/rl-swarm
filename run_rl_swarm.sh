@@ -494,8 +494,7 @@ done
     
     echo -e "${GREEN}${BOLD}[✓] Success! The userData.json file has been created. Proceeding with remaining setups...${NC}"
     rm -f server.log localtunnel_output.log cloudflared_output.log ngrok_output.log  # Wait for 5 seconds before checking again
-    done
-    
+
     echo "Found userData.json. Proceeding..."
 
     ORG_ID=$(awk 'BEGIN { FS = "\"" } !/^[ \t]*[{}]/ { print $(NF - 1); exit }' modal-login/temp-data/userData.json)
