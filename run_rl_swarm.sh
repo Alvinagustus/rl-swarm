@@ -70,13 +70,80 @@ trap cleanup EXIT
 
 echo -e "\033[38;5;224m"
 cat << "EOF"
-    ██████  ██            ███████ ██     ██  █████  ██████  ███    ███
-    ██   ██ ██            ██      ██     ██ ██   ██ ██   ██ ████  ████
-    ██████  ██      █████ ███████ ██  █  ██ ███████ ██████  ██ ████ ██
-    ██   ██ ██                 ██ ██ ███ ██ ██   ██ ██   ██ ██  ██  ██
-    ██   ██ ███████       ███████  ███ ███  ██   ██ ██   ██ ██      ██
 
-    From Gensyn
+=========================+====+%@@@@@@%%%%%%%%%##%%%%#####*###*=+#%%%%%%######%%%%%%%%%#+===========
+=====---=============+##%%%###%@@@@@@%%%%%####%%%%%#####%%%#**+++++###%%################*+==========
+=======--==========+#@@@@@@@@@@@@@@@%%%%%%####%@%*+++*#***+++**#**+=+****+++++=-=======+++==========
+---------=========+#@@@@@@@@@@@@@@@@%%%%%######****+++*+=-:=*#*+++**++***+=+=+=:-==-----=========+##
+---------=========*%@@@@@@@@@@@@@@@%%%%%#####***###+*#**##*+--==-=++**++++===++=+++=--=+=-====+*###*
+----------==----===*%@@@@@@@@@@@@@@%%%%###%%#*##%%####**###%*=:=*+==+++=---=+=-+*+**=-=+=-=+**#%%#++
+----------==++++==+#%@@@@@@@@@@@@@%%%%%%%%%%%#####******+=+###+=*+----++-::==: .-===-=++=--+%@@%%%%%
+----------=+*#####%%@%@@@@@@@@@@@@@@@@%######%**#######**####***+=---++=::=+**=----::-+*+--+%@%%@@@@
+------------=+#%%%%@@@@@@@@@@@@@@@@%%@@%%%%%@@%%%%###########+=*#*+====--++++**==+=:::-++=-+#%%%%%%%
+-----------=*%%##%@%%%%@@@@@@@@@@@@@@@@@@@@@@@%%######**+===++++****+=--=+=---=++*+=====----=*%%%%%%
+----------=#%#+=+%%#*%@@@@@@@@@@@@@@@@@@@@%%%%####%%%%%##*++===-----===*#**+====--=+*+=-:--=+*#%%%%%
+----------=++=-=+%%##@@@@@@@@@@@@@@@@@@@%%%%%%%%%%##%%%%%%%##*+==-:::::-=+*###*+=-==+**-==-=+*#%%%%%
+----------------+%@%%@@@@@@@@@@@@@@@%%%%%%%%%%%%#########%%%%###*+=--::::::--=+===++--=+*+--=*%@%%%%
+----------------=+#%%%%%@@@@@@@@@@@%%%%%%%%%%%%%###**++==+*#####**+==--::::::::-==+*+*+=+++++#@%%%%%
+------------------=+++#%@@@@@@@@@%%%%%%%%##%%@@%%%##*+++==+*#####**++==-------:---==*##*+===*%@%%%%%
+------------------==+*%%@@@@@@@%%%%%%%%%#####%%%@@@%%#*###***##%##**+=================+###+=*%@%%%%%
+--------------==+++*%%%%%%@@@%%%%%%%%%%##########%#############%%###*+===++**####**+===+#%#*#@@%%%%%
+-------------=+#%%%%#+*%%%%%%%%%%%%%%%%##########****+++*###########*******##%%%%%%##**+***+#%@@@@%%
+--------------==+++=-=#%%%%%%%%%%%%%%%###****++*****+==--=+**#####*+==**#######****####**##*#%@@@@@@
+=========------------+#%%%%%%%%%%%%%%%###**+++===+**++========+***+-:-+**#####*+====++**#%%%@@@@@@@@
++++++++++=-----------+#%#%%%%%%%%%%%%%%##**+++====---------==++**+=-:-=++*##%%##***+++++*%@@@@@@@%#%
++++++++++=-----------=*#%%%@%%%%%%%%%%%%##***++==-:::::::-==++++++-::-===+**###%%%####*+#%@@@@@@%##%
++++++++++=----==-------+*%@@@%%%%%%%%%%%%##***++==--::---=+++++++=-::-==-==+++++*##%%%#*#%%%%@@@@%%%
++++++++++=------::.....::=#%@%%%%%%%%%%%%%##***++===+++++*****+==-:::-==---==++=++++*****+===*#@@#*+
++++++++++=---:.............-*%%%%%%%%%%%%%%##**+++++++***+===+==-:::--===-::-=+++++++++=------=**+=-
++++++++++=--:......    ......+%%%%%%%%%%%%%%##*+++++*##**+=====-::..:-===-::::--==+++*+=-----------=
++++++++++=-:....:=:   .=:.....+%%%%%%%%%%%%##***+++*#%%####*+++==-:::--===-::::::--=+++=-----------*
++++++++++=:::---:.     .:---:.-%%%%%%%%%%%%#********#%%%%%%%%#**+=-------===--:::--=++=-----------+#
++++++++++=:::..-=-     :=-.:..:#@%%%%%%%%##****#########%%%%%%##**++++==-==+==----==++=----------+#*
++++++++++=: :.:#%%.....#%%:.::-%%%%%%%%%##**##################*+*######*+==++======++==---------+#*=
++++++++++:  .::=+-.....=+=::::*@%%%%%%%%#**####%%%###***+++==+++***###*+=--=+++==++++=---------=*#+-
++++++++++-  .-:::-=++==:::::-+%%%@%@%%%%#*####%%%%%####*+++===-===+****+====**++++++=+++=------=+=--
++++++++++=-:-----=+++++=---=#@%%%%%%%%%%######%%%%%##*****++++=====++****++=***+**+==##*+=----------
++++++++++==--------------=#%@%%@%%%%@@%%############*+==----==+++++++++***++***++++++##*+=----------
++++++++++==-------------=*%@%%@@@@@@@@@%%#############*+=--::::-==+*******++***+=-=+###*+=----------
++++++++++==----=--------=*%@@@@@@@@@@@@@%%%%#####%%%%%##*++=---::--=+*###*****++++=*###**+=---------
+++++++++===----=---------*%@@@@@@@@@@@@@@%%%%%########%%###**+++==++++*#*****+=+*=-+###***+==-------
+++++++++===--------------*%@@@@@@@@@@@@@@%%%%%######**###########****++******##%#==+###*#**+==------
+++++++++===--------------*%@@@@@@@@@@@@@@%%%%%######**+++++**####****+++***##%@@%+=*######**+==-----
+++++=++++==------------=*%@@@@@@@@@@@@@@@@%%%%%%%%%##**+++=+++++*********###%%%@%+=+######**++=--==+
++++==+++===-------=+++*#%@@@@@@@@@@@@@@@@@@@@@%%%%%%###****++++*******######%%%@%+=*######**+++++***
+============----=*#%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%###*******#####*+*##%%%#**########*********
+==++++++*******##%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%##***#####*+=+***#**+***######********+
+*###%%%%%%%%@@%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%#########+=-+********************++++
+#%%%%%%%%%%@@@%%#%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#######*+--=+*****************++++++
+
+ ██████╗ ███████╗███╗   ██╗███████╗██╗   ██╗███╗   ██╗                
+██╔════╝ ██╔════╝████╗  ██║██╔════╝╚██╗ ██╔╝████╗  ██║                
+██║  ███╗█████╗  ██╔██╗ ██║███████╗ ╚████╔╝ ██╔██╗ ██║                
+██║   ██║██╔══╝  ██║╚██╗██║╚════██║  ╚██╔╝  ██║╚██╗██║                
+╚██████╔╝███████╗██║ ╚████║███████║   ██║   ██║ ╚████║                
+ ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═══╝                
+                                                                      
+██████╗ ██╗      ███████╗██╗    ██╗ █████╗ ██████╗ ███╗   ███╗        
+██╔══██╗██║      ██╔════╝██║    ██║██╔══██╗██╔══██╗████╗ ████║        
+██████╔╝██║█████╗███████╗██║ █╗ ██║███████║██████╔╝██╔████╔██║        
+██╔══██╗██║╚════╝╚════██║██║███╗██║██╔══██║██╔══██╗██║╚██╔╝██║        
+██║  ██║███████╗ ███████║╚███╔███╔╝██║  ██║██║  ██║██║ ╚═╝ ██║        
+╚═╝  ╚═╝╚══════╝ ╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝        
+                                                                      
+██████╗ ██╗   ██╗                                                     
+██╔══██╗╚██╗ ██╔╝                                                     
+██████╔╝ ╚████╔╝                                                      
+██╔══██╗  ╚██╔╝                                                       
+██████╔╝   ██║                                                        
+╚═════╝    ╚═╝                                                        
+                                                                      
+ █████╗ ███╗   ███╗██████╗  █████╗ ███╗   ██╗ ██████╗ ██████╗ ███████╗
+██╔══██╗████╗ ████║██╔══██╗██╔══██╗████╗  ██║██╔═══██╗██╔══██╗██╔════╝
+███████║██╔████╔██║██████╔╝███████║██╔██╗ ██║██║   ██║██║  ██║█████╗  
+██╔══██║██║╚██╔╝██║██╔══██╗██╔══██║██║╚██╗██║██║   ██║██║  ██║██╔══╝  
+██║  ██║██║ ╚═╝ ██║██████╔╝██║  ██║██║ ╚████║╚██████╔╝██████╔╝███████╗
+╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝
 
 EOF
 
@@ -174,12 +241,416 @@ if [ "$CONNECT_TO_TESTNET" = true ]; then
     echo "Started server process: $SERVER_PID"
     sleep 5
 
-    # Try to open the URL in the default browser
-    if open http://localhost:3000 2> /dev/null; then
-        echo_green ">> Successfully opened http://localhost:3000 in your default browser."
-    else
-        echo ">> Failed to open http://localhost:3000. Please open it manually."
+# 2. Variabel PORT (port aplikasi lokal Anda):
+#    Contoh:
+#    PORT=3000
+#
+# 3. Variabel Arsitektur dan Sistem Operasi (untuk instalasi Cloudflared & ngrok):
+#    Anda mungkin perlu mendeteksi ini secara otomatis, contoh:
+#    OS=$(uname -s | tr '[:upper:]' '[:lower:]') # e.g., linux, darwin
+#    ARCH=$(uname -m)
+#
+#    Untuk Cloudflared (CF_ARCH):
+#    if [[ "$ARCH" == "x86_64" ]]; then CF_ARCH="amd64";
+#    elif [[ "$ARCH" == "aarch64" ]]; then CF_ARCH="arm64";
+#    else CF_ARCH="$ARCH"; fi # Sesuaikan jika perlu
+#
+#    Untuk ngrok (NGROK_ARCH):
+#    if [[ "$ARCH" == "x86_64" ]]; then NGROK_ARCH="amd64";
+#    elif [[ "$ARCH" == "aarch64" ]]; then NGROK_ARCH="arm64";
+#    elif [[ "$ARCH" == "i386" ]] || [[ "$ARCH" == "i686" ]]; then NGROK_ARCH="386";
+#    elif [[ "$ARCH" == "armv7l" ]]; then NGROK_ARCH="arm";
+#    else NGROK_ARCH="$ARCH"; fi # Sesuaikan jika perlu
+#
+# Global variables for tunnel info
+TUNNEL_PID=""
+FORWARDING_URL=""
+TUNNEL_TYPE=""
+
+# --- Fungsi-Fungsi ---
+
+check_url() {
+    local url=$1
+    local max_retries=3
+    local retry=0
+    
+    while [ $retry -lt $max_retries ]; do
+        http_code=$(curl -s -o /dev/null -w "%{http_code}" "$url" --max-time 10 2>/dev/null) # Added timeout
+        if [ "$http_code" = "200" ] || [ "$http_code" = "404" ] || [ "$http_code" = "301" ] || [ "$http_code" = "302" ]; then
+            return 0
+        fi
+        retry=$((retry + 1))
+        echo -e "${YELLOW}[i] check_url: Retrying $url (Attempt: $retry/$max_retries, HTTP Code: $http_code)...${NC}"
+        sleep 2
+    done
+    echo -e "${RED}[✗] check_url: Failed to get a valid response from $url after $max_retries attempts.${NC}"
+    return 1
+}
+
+install_localtunnel() {
+    if command -v lt >/dev/null 2>&1; then
+        echo -e "${GREEN}${BOLD}[✓] Localtunnel is already installed.${NC}"
+        return 0
     fi
+    echo -e "\n${CYAN}${BOLD}[i] Installing localtunnel...${NC}"
+    if npm install -g localtunnel > /dev/null 2>&1; then
+        echo -e "${GREEN}${BOLD}[✓] Localtunnel installed successfully.${NC}"
+        return 0
+    else
+        echo -e "${RED}${BOLD}[✗] Failed to install localtunnel. Make sure Node.js and npm are installed.${NC}"
+        return 1
+    fi
+}
+
+try_localtunnel() {
+    echo -e "\n${CYAN}${BOLD}[i] Trying Localtunnel...${NC}"
+    if ! command -v npm >/dev/null 2>&1; then
+        echo -e "${RED}${BOLD}[✗] npm is not installed. Cannot install Localtunnel.${NC}"
+        return 1
+    fi
+    if install_localtunnel; then
+        TUNNEL_TYPE="localtunnel"
+        # Kill previous instances if any
+        pkill -f "lt --port $PORT" > /dev/null 2>&1 || true 
+        sleep 1
+
+        echo -e "${YELLOW}${BOLD}[i] Starting Localtunnel on port $PORT...${NC}"
+        # Start localtunnel in background, redirect output to a file
+        # Adding --open false as we don't want it to attempt to open a browser by itself
+        lt --port "$PORT" --open false > localtunnel_output.log 2>&1 &
+        TUNNEL_PID=$!
+        
+        echo -e "${YELLOW}${BOLD}[i] Waiting for Localtunnel to establish connection (up to 15 seconds)...${NC}"
+        # Wait for lt to start and print URL. Increased sleep for reliability.
+        for _ in $(seq 1 8); do sleep 1; printf "."; done; echo
+
+        # Try to extract URL from log file
+        LT_URL=$(grep -o 'https://[a-zA-Z0-9.-]*\.loca\.lt' localtunnel_output.log | head -n1)
+
+        if [ -n "$LT_URL" ]; then
+            echo -e "${GREEN}${BOLD}[i] Localtunnel URL obtained: $LT_URL ${NC}"
+            echo -e "${YELLOW}${BOLD}[i] Verifying Localtunnel URL...${NC}"
+            if check_url "$LT_URL"; then
+                FORWARDING_URL="$LT_URL"
+                echo -e "${GREEN}${BOLD}[✓] Localtunnel started successfully! URL:${NC} ${CYAN}${BOLD}$FORWARDING_URL${NC}"
+                echo -e "${YELLOW}${BOLD}[!] Note: Some localtunnel instances may show a temporary landing page first.${NC}"
+                return 0
+            else
+                echo -e "${RED}${BOLD}[✗] Localtunnel URL ($LT_URL) is not accessible or check_url failed.${NC}"
+                echo -e "${BLUE}${BOLD}[i] Tip: Try opening the URL manually in your browser. It might require interaction.${NC}"
+                # Provide URL anyway for manual check, but signal failure for automated next step
+                FORWARDING_URL="$LT_URL" # Set it so user can see it if this is the only option that partially worked
+                kill $TUNNEL_PID > /dev/null 2>&1 || true
+            fi
+        else
+            echo -e "${RED}${BOLD}[✗] Failed to get Localtunnel URL after startup.${NC}"
+            echo -e "${BLUE}${BOLD}[i] Localtunnel output:${NC}"
+            cat localtunnel_output.log # Show output for debugging
+            kill $TUNNEL_PID > /dev/null 2>&1 || true
+        fi
+        rm localtunnel_output.log 2>/dev/null
+    fi
+    return 1
+}
+
+install_cloudflared() {
+    if command -v cloudflared >/dev/null 2>&1; then
+        echo -e "${GREEN}${BOLD}[✓] Cloudflared is already installed.${NC}"
+        return 0
+    fi
+    echo -e "\n${CYAN}${BOLD}[i] Installing Cloudflared...${NC}"
+    if [ -z "$CF_ARCH" ]; then
+        echo -e "${RED}${BOLD}[✗] CF_ARCH variable is not set. Cannot determine Cloudflared architecture.${NC}"
+        return 1
+    fi
+    CF_URL="https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-$CF_ARCH"
+    echo -e "${BLUE}${BOLD}[i] Downloading Cloudflared from $CF_URL ${NC}"
+    if ! wget -q --show-progress "$CF_URL" -O cloudflared; then
+        echo -e "${RED}${BOLD}[✗] Failed to download Cloudflared.${NC}"
+        return 1
+    fi
+    chmod +x cloudflared
+    if sudo mv cloudflared /usr/local/bin/; then
+        echo -e "${GREEN}${BOLD}[✓] Cloudflared installed successfully.${NC}"
+        return 0
+    else
+        echo -e "${RED}${BOLD}[✗] Failed to move Cloudflared to /usr/local/bin/. Check permissions or if sudo is available.${NC}"
+        rm cloudflared 2>/dev/null
+        return 1
+    fi
+}
+
+try_cloudflared() {
+    echo -e "\n${CYAN}${BOLD}[i] Trying Cloudflared...${NC}"
+    if install_cloudflared; then
+        TUNNEL_TYPE="cloudflared"
+        pkill -f "cloudflared tunnel --url" > /dev/null 2>&1 || true # Kill previous instances
+        sleep 1
+
+        echo -e "${YELLOW}${BOLD}[i] Starting Cloudflared tunnel for http://localhost:$PORT...${NC}"
+        # Start cloudflared in background, redirect output to a file.
+        cloudflared tunnel --url "http://localhost:$PORT" --no-autoupdate > cloudflared_output.log 2>&1 &
+        TUNNEL_PID=$!
+        
+        echo -e "${YELLOW}${BOLD}[i] Waiting for Cloudflared to establish connection (up to 20 seconds)...${NC}"
+         # Wait for cloudflared to start and print URL. Increased sleep for reliability.
+        for _ in $(seq 1 10); do sleep 1; printf "."; done; echo
+
+        # Try to extract URL from log file. Cloudflared URLs usually end with .trycloudflare.com
+        CF_URL=$(grep -o 'https://[a-zA-Z0-9.-]*\.trycloudflare\.com' cloudflared_output.log | head -n 1)
+
+        if [ -n "$CF_URL" ]; then
+            echo -e "${GREEN}${BOLD}[i] Cloudflared URL obtained: $CF_URL ${NC}"
+            echo -e "${YELLOW}${BOLD}[i] Verifying Cloudflared URL...${NC}"
+            if check_url "$CF_URL"; then
+                FORWARDING_URL="$CF_URL"
+                echo -e "${GREEN}${BOLD}[✓] Cloudflared tunnel started successfully! URL:${NC} ${CYAN}${BOLD}$FORWARDING_URL${NC}"
+                return 0
+            else
+                echo -e "${RED}${BOLD}[✗] Cloudflared URL ($CF_URL) is not accessible or check_url failed.${NC}"
+                kill $TUNNEL_PID > /dev/null 2>&1 || true
+            fi
+        else
+            echo -e "${RED}${BOLD}[✗] Failed to get Cloudflared URL after startup.${NC}"
+            echo -e "${BLUE}${BOLD}[i] Cloudflared output:${NC}"
+            cat cloudflared_output.log # Show output for debugging
+            kill $TUNNEL_PID > /dev/null 2>&1 || true
+        fi
+        rm cloudflared_output.log 2>/dev/null
+    fi
+    return 1
+}
+
+install_ngrok() {
+    if command -v ngrok >/dev/null 2>&1; then
+        echo -e "${GREEN}${BOLD}[✓] ngrok is already installed.${NC}"
+        return 0
+    fi
+    echo -e "\n${CYAN}${BOLD}[i] Installing ngrok...${NC}"
+    if [ -z "$OS" ] || [ -z "$NGROK_ARCH" ]; then
+        echo -e "${RED}${BOLD}[✗] OS or NGROK_ARCH variable is not set. Cannot determine ngrok download URL.${NC}"
+        return 1
+    fi
+    NGROK_URL="https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-$OS-$NGROK_ARCH.tgz"
+    echo -e "${BLUE}${BOLD}[i] Downloading ngrok from $NGROK_URL ${NC}"
+    if ! wget -q --show-progress "$NGROK_URL" -O ngrok.tgz; then
+        echo -e "${RED}${BOLD}[✗] Failed to download ngrok.${NC}"
+        return 1
+    fi
+    if ! tar -xzf ngrok.tgz; then
+        echo -e "${RED}${BOLD}[✗] Failed to extract ngrok.${NC}"
+        rm ngrok.tgz 2>/dev/null
+        return 1
+    fi
+    if sudo mv ngrok /usr/local/bin/; then
+        echo -e "${GREEN}${BOLD}[✓] ngrok installed successfully.${NC}"
+        rm ngrok.tgz 2>/dev/null
+        return 0
+    else
+        echo -e "${RED}${BOLD}[✗] Failed to move ngrok to /usr/local/bin/. Check permissions or if sudo is available.${NC}"
+        rm ngrok ngrok.tgz 2>/dev/null
+        return 1
+    fi
+}
+
+get_ngrok_url_method1() {
+    # Uses ngrok log with JSON format
+    local url=$(grep -o '"url":"https://[^"]*' ngrok_output.log 2>/dev/null | head -n1 | cut -d'"' -f4)
+    echo "$url"
+}
+
+get_ngrok_url_method2() {
+    # Uses ngrok API (alternative if logs don't work or not in JSON)
+    local try_port
+    local url=""
+    # Try default ngrok API ports
+    for try_port in $(seq 4040 4045); do 
+        local response=$(curl -s "http://localhost:$try_port/api/tunnels" 2>/dev/null)
+        if [ -n "$response" ]; then
+            # Look for https tunnels first
+            url=$(echo "$response" | grep -o '"public_url":"https://[^"]*' | head -n1 | cut -d'"' -f4)
+            if [ -n "$url" ]; then break; fi
+            # Fallback to http if no https found (though ngrok usually gives https)
+            if [ -z "$url" ]; then
+                 url=$(echo "$response" | grep -o '"public_url":"http://[^"]*' | head -n1 | cut -d'"' -f4)
+                 if [ -n "$url" ]; then break; fi
+            fi
+        fi
+    done
+    echo "$url"
+}
+
+get_ngrok_url_method3() {
+    # Uses plain text log format
+    local url=$(grep -o "Forwarding.*https://[^ ]*" ngrok_output.log 2>/dev/null | grep -o "https://[^ ]*" | head -n1)
+    echo "$url"
+}
+
+try_ngrok() {
+    echo -e "\n${CYAN}${BOLD}[i] Trying ngrok...${NC}"
+    if install_ngrok; then
+        TUNNEL_TYPE="ngrok"
+        
+        # Check if authtoken is already configured
+        if [ -f "$HOME/.config/ngrok/ngrok.yml" ] || [ -f "$HOME/.ngrok2/ngrok.yml" ]; then # Common ngrok config paths
+             if grep -q "authtoken:" "$HOME/.config/ngrok/ngrok.yml" 2>/dev/null || grep -q "authtoken:" "$HOME/.ngrok2/ngrok.yml" 2>/dev/null ; then
+                echo -e "${GREEN}${BOLD}[✓] ngrok authtoken already configured.${NC}"
+             else
+                NEEDS_AUTH=true
+             fi
+        else
+            NEEDS_AUTH=true
+        fi
+
+        if [ "$NEEDS_AUTH" = true ]; then
+            while true; do
+                echo -e "\n${YELLOW}${BOLD}To get your ngrok authtoken (optional but recommended for stable URLs & features):${NC}"
+                echo "1. Sign up or log in at https://dashboard.ngrok.com"
+                echo "2. Go to 'Your Authtoken' section: https://dashboard.ngrok.com/get-started/your-authtoken"
+                echo "3. Copy your authtoken and paste it below (or press Enter to skip if you want an anonymous tunnel)."
+                read -p "$(echo -e "${BOLD}Enter ngrok authtoken (or press Enter to skip):${NC} ")" NGROK_TOKEN
+            
+                if [ -z "$NGROK_TOKEN" ]; then
+                    echo -e "${YELLOW}[i] Skipping ngrok authtoken. Using anonymous tunnel.${NC}"
+                    break 
+                fi
+            
+                # Kill existing ngrok before applying authtoken to avoid conflicts
+                pkill -f ngrok > /dev/null 2>&1 || true
+                sleep 1
+                ngrok authtoken "$NGROK_TOKEN" > /dev/null 2>&1
+                if [ $? -eq 0 ]; then
+                    echo -e "${GREEN}${BOLD}[✓] Successfully authenticated ngrok!${NC}"
+                    break
+                else
+                    echo -e "${RED}[✗] Authentication failed. Please check your token and try again, or press Enter to skip.${NC}"
+                fi
+            done
+        fi
+
+        # Kill existing ngrok before starting a new tunnel
+        pkill -f ngrok > /dev/null 2>&1 || true
+        sleep 1
+
+        # Method 1: JSON log output (preferred)
+        echo -e "\n${CYAN}${BOLD}[i] Starting ngrok (method 1: JSON log)...${NC}"
+        ngrok http "$PORT" --log=stdout --log-format=json > ngrok_output.log 2>&1 &
+        TUNNEL_PID=$!
+        sleep 5 
+        NGROK_URL=$(get_ngrok_url_method1)
+        if [ -n "$NGROK_URL" ] && check_url "$NGROK_URL"; then
+            FORWARDING_URL="$NGROK_URL"
+            echo -e "${GREEN}${BOLD}[✓] ngrok (method 1) started! URL:${NC} ${CYAN}${BOLD}$FORWARDING_URL${NC}"
+            return 0
+        else
+            echo -e "${RED}${BOLD}[✗] Failed to get ngrok URL or check failed (method 1).${NC}"
+            kill $TUNNEL_PID > /dev/null 2>&1 || true
+            pkill -f ngrok > /dev/null 2>&1 || true # Ensure ngrok is killed
+            sleep 1
+        fi
+
+        # Method 2: API (fallback)
+        echo -e "\n${CYAN}${BOLD}[i] Starting ngrok (method 2: API)...${NC}"
+        # For API method, ngrok needs to be running without specific stdout log format
+        ngrok http "$PORT" --log=ngrok_output.log > /dev/null 2>&1 & # Log to file, not stdout for this
+        TUNNEL_PID=$!
+        sleep 8 # Give more time for API to be available
+        NGROK_URL=$(get_ngrok_url_method2)
+        if [ -n "$NGROK_URL" ] && check_url "$NGROK_URL"; then
+            FORWARDING_URL="$NGROK_URL"
+            echo -e "${GREEN}${BOLD}[✓] ngrok (method 2) started! URL:${NC} ${CYAN}${BOLD}$FORWARDING_URL${NC}"
+            return 0
+        else
+            echo -e "${RED}${BOLD}[✗] Failed to get ngrok URL or check failed (method 2).${NC}"
+            kill $TUNNEL_PID > /dev/null 2>&1 || true
+            pkill -f ngrok > /dev/null 2>&1 || true
+            sleep 1
+        fi
+        
+        # Method 3: Plain text log (another fallback)
+        echo -e "\n${CYAN}${BOLD}[i] Starting ngrok (method 3: plain text log)...${NC}"
+        ngrok http "$PORT" --log=stdout > ngrok_output.log 2>&1 &
+        TUNNEL_PID=$!
+        sleep 5
+        NGROK_URL=$(get_ngrok_url_method3)
+        if [ -n "$NGROK_URL" ] && check_url "$NGROK_URL"; then
+            FORWARDING_URL="$NGROK_URL"
+            echo -e "${GREEN}${BOLD}[✓] ngrok (method 3) started! URL:${NC} ${CYAN}${BOLD}$FORWARDING_URL${NC}"
+            return 0
+        else
+            echo -e "${RED}${BOLD}[✗] Failed to get ngrok URL or check failed (method 3).${NC}"
+            kill $TUNNEL_PID > /dev/null 2>&1 || true
+            pkill -f ngrok > /dev/null 2>&1 || true
+        fi
+        rm ngrok_output.log 2>/dev/null
+    fi
+    return 1
+}
+
+start_tunnel() {
+    echo -e "\n${BLUE}${BOLD}=====================================${NC}"
+    echo -e "${BLUE}${BOLD}🚀 Starting Tunneling Service... 🚀${NC}"
+    echo -e "${BLUE}${BOLD}=====================================${NC}"
+    echo -e "${YELLOW}${BOLD}[i] Application Port: $PORT${NC}"
+
+
+    # Try Localtunnel first
+    if try_localtunnel; then
+        return 0
+    else
+        echo -e "${RED}[i] Localtunnel failed. Trying next option...${NC}"
+    fi
+    
+    # Then try Cloudflared
+    if try_cloudflared; then
+        return 0
+    else
+        echo -e "${RED}[i] Cloudflared failed. Trying next option...${NC}"
+    fi
+    
+    # Finally, try ngrok
+    if try_ngrok; then
+        return 0
+    else
+        echo -e "${RED}[i] ngrok also failed.${NC}"
+    fi
+    
+    echo -e "\n${RED}${BOLD}[✗] All tunneling attempts failed.${NC}"
+    return 1
+}
+
+# --- Logika Utama ---
+
+# (Pastikan variabel PORT, warna, OS, ARCH sudah di-set di atas atau di awal skrip utama Anda)
+
+# Panggil fungsi untuk memulai tunnel
+start_tunnel
+
+# Periksa hasil dari start_tunnel
+if [ $? -eq 0 ] && [ -n "$FORWARDING_URL" ]; then
+    echo -e "\n${GREEN}${BOLD}==================================================================${NC}"
+    echo -e "${GREEN}${BOLD}[✓] ✅ SUCCESS! Your application is accessible via:${NC}"
+    echo -e "${CYAN}${BOLD}${FORWARDING_URL}${NC}"
+    if [ "$TUNNEL_TYPE" != "localtunnel" ]; then # Localtunnel sudah memberikan pesan spesifik
+         echo -e "${GREEN}Please visit this website. If it's a web service, you might need to log in.${NC}"
+    fi
+    echo -e "${GREEN}${BOLD}==================================================================${NC}"
+    # Anda bisa menambahkan perintah untuk membuka URL di browser jika diinginkan, misalnya:
+    # if command -v xdg-open > /dev/null; then xdg-open "$FORWARDING_URL"; 
+    # elif command -v open > /dev/null; then open "$FORWARDING_URL"; 
+    # fi
+else
+    echo -e "\n${BLUE}${BOLD}==================================================================${NC}"
+    echo -e "${BLUE}${BOLD}[⚠️] Manual Setup Required or All Tunnels Failed ⚠️${NC}"
+    echo -e "${BLUE}Don't worry, you can try to set up a tunnel manually.${NC}"
+    echo -e "${BLUE}For example, using ngrok:${NC}"
+    echo "1. Open another terminal tab on this server/WSL."
+    echo "2. Ensure ngrok is installed (you can run 'install_ngrok' from this script or install manually)."
+    echo "3. Paste this command into the new terminal: ${YELLOW}ngrok http $PORT${NC}"
+    echo "4. ngrok will show a forwarding URL similar to: https://xxxx.ngrok-free.app"
+    echo "5. Visit that URL in your browser. It may take a few moments to load."
+    echo -e "${BLUE}${BOLD}==================================================================${NC}"
+fi
 
     cd ..
 
