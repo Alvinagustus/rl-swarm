@@ -13,6 +13,7 @@ NC='\033[0m' # No Color
 # General arguments
 ROOT=$PWD
 
+export WANDB_MODE=disable
 export PUB_MULTI_ADDRS
 export PEER_MULTI_ADDRS
 export HOST_MULTI_ADDRS
