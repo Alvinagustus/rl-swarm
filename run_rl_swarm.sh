@@ -5,6 +5,12 @@ set -euo pipefail
 # General arguments
 ROOT=$PWD
 
+YELLOW='\033[0;33m'
+CYAN='\033[0;36m'
+BOLD='\033[1m'
+NC='\033[0m'
+PURPLE='\033[0;95m'
+
 export PUB_MULTI_ADDRS
 export PEER_MULTI_ADDRS
 export HOST_MULTI_ADDRS
