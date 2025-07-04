@@ -1,8 +1,9 @@
 # Composite Dataset Configuration for Reasoning Gym
-# This file defines multiple datasets with their weights and configurations
+# This file defines multiple datasets with their weights and configurations.
+# IMPROVEMENT: Increased virtual size and enabled infinite generation for all datasets.
 
-size: 1000  # Total virtual size of the composite dataset
-seed: 42    # Seed for reproducibility
+size: 100000  # Total virtual size of the composite dataset (increased for longer runs)
+seed: 42      # Seed for reproducibility
 
 datasets:
   - name: arc_1d
@@ -12,7 +13,7 @@ datasets:
       max_size: 30
       num_train: 3
       seed: 42
-      size: 500
+      size: null  # Set to null for infinite generation
 
   # Basic arithmetic operations
   - name: basic_arithmetic
@@ -28,7 +29,7 @@ datasets:
       format_style: "natural"
       whitespace: "single"
       seed: 1234
-      size: 500
+      size: null  # Set to null for infinite generation
   
   # Base Conversion
   - name: base_conversion
@@ -39,7 +40,7 @@ datasets:
       min_value: 0
       max_value: 1000
       seed: 1239
-      size: 500
+      size: null  # Set to null for infinite generation
 
   # BrainF***
   - name: bf
@@ -47,7 +48,7 @@ datasets:
     config: 
       difficulty: 1
       seed: 1238
-      size: 500
+      size: null  # Set to null for infinite generation
 
   # Binary Matrix
   - name: binary_matrix
@@ -57,7 +58,7 @@ datasets:
       max_n: 10
       p_zero: 0.25
       seed: 1236
-      size: 500
+      size: null  # Set to null for infinite generation
       
   # Calendar arithmetic for date calculations
   - name: calendar_arithmetic
@@ -68,7 +69,7 @@ datasets:
       leap_year_range: 200
       tasks: ["count_days", "weekday_of_date", "is_leap_year", "recurring_event_day"]
       seed: 1237
-      size: 500
+      size: null  # Set to null for infinite generation
 
   # Decimal arithmetic for more complex calculations
   - name: decimal_arithmetic
@@ -80,7 +81,7 @@ datasets:
       max_num_decimal_places: 3
       precision: 5  
       seed: 1235
-      size: 500
+      size: null  # Set to null for infinite generation
       
   # Fraction simplification problems
   - name: fraction_simplification
@@ -92,7 +93,7 @@ datasets:
       max_factor: 100
       styles: ["plain", "latex_frac", "latex_dfrac"]
       seed: 1236
-      size: 500
+      size: null  # Set to null for infinite generation
       
   # Logic puzzles
   - name: propositional_logic
@@ -105,4 +106,4 @@ datasets:
       min_complexity: 1
       max_complexity: 3
       seed: 1238
-      size: 500
+      size: null  # Set to null for infinite generation
