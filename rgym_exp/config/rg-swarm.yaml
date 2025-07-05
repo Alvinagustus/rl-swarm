@@ -94,4 +94,5 @@ default_large_model_pool:
   - Gensyn/Qwen2.5-1.5B-Instruct
 
 default_small_model_pool:
+  - Qwen2.5-1.5B-Instruct
   - Qwen/Qwen3-0.6B
